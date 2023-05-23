@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Comment Board</title>
+    <title>Simple Comment Board</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<h1>Simple Comment Board</h1>
 
+<div id="form-area">
+    <label for="comment-input">
+        <textarea cols="50" id="comment-input" placeholder="Write your comment here..." rows="4"></textarea><br>
+    </label>
+    <button id="submit-button">Post Comment</button>
+</div>
+
+<div id="comment-section"></div>
+
+<script src="main.js"></script>
 </body>
 </html>
+
 
 <!--We would like you to create a comment board. Attached are images of what we would like the project to look like.-->
 
