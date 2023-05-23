@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Simple Comment Board</title>
+    <title>Comment Board</title>
+    <meta charset="UTF-8">
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<h1>Simple Comment Board</h1>
-
-<div id="form-area">
-    <label for="comment-input">
-        <textarea cols="50" id="comment-input" placeholder="Write your comment here..." rows="4"></textarea><br>
-    </label>
-    <button id="submit-button">Post Comment</button>
+<div class="panel post-panel">
+    <!--username-->
+    <p class="display-name">WhySoSerious45</p>
+    <!--post contents-->
+    <h1 class="post-title"><b>Trying to decide a career path?<br>
+        Programming is the move. <br>Change my mind.</b></h1>
 </div>
 
-<div id="comment-section"></div>
+<div class="panel comment-panel" id="commentsSection"></div>
+
+<div class="panel add-comment-panel">
+    <div class="input-section">
+        <label for="displayName"></label><input id="displayName" placeholder="Display name" type="text">
+    </div>
+    <div class="input-section">
+        <label for="commentContent"></label><textarea id="commentContent" placeholder="Your comment"></textarea>
+    </div>
+    <div class="input-section">
+        <button id="postButton">Post Comment</button>
+    </div>
+</div>
 
 <script src="main.js"></script>
 </body>
 </html>
-
-
-<!--We would like you to create a comment board. Attached are images of what we would like the project to look like.-->
-
-<!--Requirements:-->
-<!--Must use pure html, css, and javascript(jQuery is the only library/framework allowed).-->
-<!--Users can create their own display name with their comment.-->
-<!--Add the posts from newest to oldest(Newest post at the top).-->
-<!--When a user clicks the delete button on a comment, remove that comment from the page.-->
-<!--When a user clicks the edit button, allow the comment to be edited and change the original comment when submitted.-->
-<!--The original post MUST be fixed on top of the page. Meaning when the user scrolls through the comments the original post("Trying to decide a career path? Programming is the move. Change my mind.") will stay on top of the comments and will always be shown.-->
-<!--The same goes for the "creating a comment" section. Make sure it is fixed on the bottom of the page and stays on top of the comments as the user scrolls.-->
-
-<!--Upload your code challenge to github and respond to this email with your repository link(Not a zip file).-->
-
-<!--What we will be looking for:-->
-<!--Clean and organized code-->
-<!--All requirements being met-->
-<!--Proficiency in HTML, CSS, and JavaScript-->
-<!--Thank you for taking the time to complete this challenge. We look forward to your response.-->
